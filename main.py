@@ -17,7 +17,7 @@ if __name__ == "__main__":
     if generate_random_data:
         lst_point = generate_random_points(number, coord_tresh, "circle")
     else:
-        _ , lst_point = load_data_csv("Punkte.CSV")
+        _ , lst_point = load_data_csv("points.csv")
  ############################################################################################################
 
 # Verschiedene Modi
