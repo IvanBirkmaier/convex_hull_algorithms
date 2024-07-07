@@ -1,4 +1,4 @@
-# ConvexHull
+# Convex Hull Algorithms
 
 This is a simple example for the implementation and visualization of the Giftwrapping and Quickhull algorithms. Everything is coded in Python.
 
