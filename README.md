@@ -1,43 +1,38 @@
 # ConvexHull
-This is a simple example for the implementation and visualization of the gitwrapping and the quickhull algohrithms. Everything is coded in python.
-The code an the readme for the project setup is in the project folder. 
-# Setup
 
-## Python Environment
+This is a simple example for the implementation and visualization of the Giftwrapping and Quickhull algorithms. Everything is coded in Python.
 
-Es wird empfohlen, eine Python-Umgebung mit Conda zu verwenden.
+## Setup
 
-## Installation von Pygame
+### Python Environment
+It is recommended to use a Python environment with Conda.
 
-Nachdem Sie Ihr Conda-Environment eingerichtet haben, können Sie Pygame mit dem folgenden Befehl installieren:
-
+### Installation of Pygame
+After setting up your Conda environment, you can install Pygame with the following command:
+```sh
 pip install pygame
+```
 
+## Instructions
 
-# Anleitung
+### 1. Starting the Program
+Run the main file `main.py` to start the program.
 
-## 1. Starten des Programms 
+### 2. Mode Selection
+- **Performance Mode**: Both algorithms, Quickhull and Giftwrapping, are measured for their performance. The result is output to the console.
+- **Visualization Mode**: The functioning of the algorithms is visualized. A new window opens where you can see the algorithms in action.
 
-Führen Sie die Hauptdatei  `main.py` aus, um das Programm zu starten.
+### 3. Selecting the Data Source
+You can either use randomly generated points or read a CSV file with data points.
 
-## 2. Auswahl des Modus
+### 4. Navigation in Visualization Mode
+You can switch between the Quickhull and Giftwrapping algorithms using the `Q` and `G` keys.
 
-- **Performance Modus**: Beide Algorithmen, Quickhull und Giftwrapping, werden hinsichtlich ihrer Performance gemessen. Das Ergebnis wird über die Konsole ausgegeben.
+### 5. Note on Display
+The coordinate origin (0,0) is centered in the middle of the square window. The positive direction of the y-axis goes downwards due to Pygame. If the points are displayed too small (e.g., as a small set of points), you can adjust the value `coord_tresh` in the main file to match the maximum x and y values of the points.
 
-- **Visualisierungs Modus**: Hier wird die Funktionsweise der Algorithmen visualisiert. Ein neues Fenster wird geöffnet, in dem Sie die Algorithmen in Aktion sehen können.
+### 6. Data Generator
+With the integrated data generator, you can generate various data patterns, e.g., circle data.
 
-## 3. Datenquelle auswählen 
+There is a test protocol that presents the results of the implementation.
 
-Sie haben die Möglichkeit, entweder zufällig generierte Punkte zu verwenden oder ein CSV-File mit Datenpunkten einzulesen.
-
-## 4. Navigation im Visualisierungsmodus 
-
-Sie können mit den Tasten `Q` und `G` zwischen den Algorithmen Quickhull und Giftwrapping wechseln.
-
-## 5. Anmerkung zur Darstellung 
-
-Der Koordinatenursprung (0,0) ist zentriert in der Mitte des quadratischen Fensters. Die positive Richtung der y-Achse geht wegen Pygame nach unten. Wenn die Punkte zu klein dargestellt werden (z.B. als eine kleine Punktmenge), können Sie den Wert `coord_tresh` in der Hauptdatei an die maximalen x bzw. y Werte der Punkte anpassen.
-
-## 6. Datengenerator 
-
-Mit dem integrierten Datengenerator können Sie verschiedene Datenmuster, z.B. Kreisdaten, generieren.
